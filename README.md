@@ -1,4 +1,4 @@
-# sage-notebook [![Build Status](https://travis-ci.com/sharpTrick/sage-notebook.svg?branch=master)](https://travis-ci.com/sharpTrick/sage-notebook)
+# sage-notebook [![Build Status](https://travis-ci.org/sharpTrick/sage-notebook.svg?branch=master)](https://travis-ci.org/sharpTrick/sage-notebook)
 sage-notebook is a community maintained Jupyter Docker Stack image with the sagemath kernel.
 
 # Launch on binder
