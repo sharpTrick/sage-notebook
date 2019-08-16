@@ -1,6 +1,10 @@
 # sage-notebook [![Build Status](https://travis-ci.org/sharpTrick/sage-notebook.svg?branch=master)](https://travis-ci.org/sharpTrick/sage-notebook)
 sage-notebook is a community maintained Jupyter Docker Stack image with the sagemath kernel.
 
+Like jupyter packages in the base image, the sagemath environment is installed via conda from conda-forge as per http://doc.sagemath.org/html/en/installation/conda.html and the sagemath kernel is executed in this environment by invoking [`conda run -n sage ...`](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html?highlight=%22conda%20run%22#activating-an-environment).
+
+Development of conda sage packages appears to be tracked at https://wiki.sagemath.org/Conda
+
 # Launch on binder
 Try this Jupyter Notebook online with this link. No installation is needed.
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sharpTrick/sage-notebook/master)
