@@ -1,3 +1,5 @@
+ARG SAGE_VERSION=9.0
+ARG SAGE_PYTHON_VERSION=3.7
 ARG BASE_CONTAINER=jupyter/minimal-notebook
 FROM $BASE_CONTAINER
 
@@ -22,7 +24,7 @@ RUN conda init bash
 
 # Install Sage conda environment
 RUN conda install --quiet --yes -n base -c conda-forge widgetsnbextension && \
-    conda create --quiet --yes -n sage -c conda-forge sage python=2.7 && \
+    conda create --quiet --yes -n sage -c conda-forge sage=$SAGE_VERSION python=$SAGE_PYTHON_VERSION && \
     conda clean --all -f -y && \
     npm cache clean --force && \
     fix-permissions $CONDA_DIR && \
